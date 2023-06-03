@@ -18,3 +18,9 @@ body {
     margin: 1rem 40rem 0 40rem;
     background-color: $color-white ;
 }
+
+@media (max-width: 600px) {
+    body {
+        margin: 1rem 2rem 0 2rem;
+    }
+}

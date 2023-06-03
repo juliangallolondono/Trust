@@ -14,11 +14,20 @@ body {
   margin: 1rem 40rem 0 40rem;
   background-color: #fff; }
 
+@media (max-width: 600px) {
+  body {
+    margin: 1rem 2rem 0 2rem; } }
+
 .heading-primary {
   text-transform: uppercase;
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 5rem; }
+  @media (max-width: 600px) {
+    .heading-primary {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2.5rem; } }
 
 .header {
   width: 100%;
@@ -33,10 +42,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start; } }
   .navbar__list {
     display: flex;
     padding: 1rem;
     font-size: 2.5rem; }
+    @media (max-width: 600px) {
+      .navbar__list {
+        font-size: 1.5rem; } }
     .navbar__list li:not(:last-child) {
       margin-right: 2rem; }
   .navbar____item-link {
@@ -77,6 +93,9 @@ body {
 .tabla-resultados {
   font-size: 1.8rem;
   width: 100%; }
+  @media (max-width: 600px) {
+    .tabla-resultados {
+      font-size: 1.3rem; } }
   .tabla-resultados th {
     text-transform: uppercase; }
     .tabla-resultados th:nth-child(1) {
