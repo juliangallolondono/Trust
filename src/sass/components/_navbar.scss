@@ -1,0 +1,36 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        padding: 1rem;
+        font-size: 2.5rem;
+
+        & li:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &____item-link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        & img {
+            width: 10rem;
+        }
+
+        & span {
+            font-size: 3rem;
+        }
+    }
+
+}
