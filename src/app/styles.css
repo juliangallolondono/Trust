@@ -17,7 +17,8 @@ body {
 .heading-primary {
   text-transform: uppercase;
   font-size: 4rem;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 5rem; }
 
 .header {
   width: 100%;
@@ -47,22 +48,50 @@ body {
     gap: 10px; }
     .navbar__link img {
       width: 10rem; }
+    .navbar__link img:hover {
+      transform: scale(1.1); }
     .navbar__link span {
       font-size: 3rem; }
+    .navbar__link span:hover {
+      text-underline-offset: .5rem;
+      text-decoration: underline; }
 
 .btn-text:link, .btn-text:visited {
   text-decoration: none;
   color: #ee7221;
   transition: all .2s;
-  padding: 3px;
+  padding: 8px;
   display: inline-block; }
 
 .btn-text:hover {
   background-color: #ee7221;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px); }
+  transform: translateY(-2px);
+  border-radius: 3px; }
 
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   transform: translateY(0); }
+
+.tabla-resultados {
+  font-size: 1.8rem;
+  width: 100%; }
+  .tabla-resultados th {
+    text-transform: uppercase; }
+    .tabla-resultados th:nth-child(1) {
+      width: 70%; }
+    .tabla-resultados th:nth-child(2) {
+      width: 15%; }
+    .tabla-resultados th:nth-child(3) {
+      max-width: 15%; }
+  .tabla-resultados th,
+  .tabla-resultados td {
+    padding: 1rem;
+    border: 1px solid #000; }
+  .tabla-resultados td:nth-child(3),
+  .tabla-resultados td:nth-child(2) {
+    text-align: center; }
+    .tabla-resultados td:nth-child(3) a,
+    .tabla-resultados td:nth-child(2) a {
+      display: inline-block; }

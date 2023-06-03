@@ -28,8 +28,17 @@
             width: 10rem;
         }
 
+        & img:hover {
+            transform: scale(1.1);
+        }
+
         & span {
             font-size: 3rem;
+        }
+
+        & span:hover {
+            text-underline-offset: .5rem;
+            text-decoration: underline;
         }
     }
 
